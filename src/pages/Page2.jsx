@@ -69,7 +69,35 @@ function Page2() {
 
     return (
         <>
+        
             <header className="header">
+                {/* Стрелка-подсказка "скролльте вниз" */}
+<div className="scroll-hint">
+  <motion.div
+    animate={{ y: [0, 10, 0] }}
+    transition={{
+      duration: 2,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }}
+    className="scroll-arrow"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="38"
+      height="68"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M12 5v14" />
+      <path d="m19 12-7 7-7-7" />
+    </svg>
+  </motion.div>
+</div>
                 <motion.div
                     className="weding_day"
                     initial="hidden"
@@ -77,9 +105,6 @@ function Page2() {
                     viewport={{ once: true, amount: 0.3 }}
                     variants={variants}
                 >
-                    <h1>Той күнү</h1>
-                    <p>06.12.2025</p>
-                    <p>Саат 16:00</p>
                 </motion.div>
                 <div className="background"></div>
                 <img
@@ -98,13 +123,11 @@ function Page2() {
                     viewport={{ once: true, amount: 0.3 }}
                     variants={variants}
                 >
-                    <h1>Урматту кошуналар сиздердерди балдарыбыз Мурза менен Айгулдун уйлонуу улпот тоюна чакырабыз</h1>
+                    <h1>Урматту коллегалар сиздердерди балдарыбыз Мурза менен Айгулдун уйлонуу улпот тоюна чакырабыз</h1>
                     <p>
                         Келип кадырлуу коногубуз болуп кетиниздер
                     </p>
-                    <h4>
-                    Той ээлери: <b>Акбарали </b>жана <b>Шаркан</b>
-                </h4>
+                    
                     <IoIosHeart className="heart" />
                 </motion.div>
             </header>
@@ -162,6 +185,10 @@ function Page2() {
                     <span>27</span>{" "}
                     <span>28</span> <span>29</span> <span>30</span> <span>31</span>
                 </div>
+                <p>Саат 16:00</p>
+                <h4>
+                    Той ээлери: <b>Акбарали </b>жана <b>Шаркан</b>
+                </h4>
             </motion.div>
             <motion.div
                 className="wedding-gallery"
