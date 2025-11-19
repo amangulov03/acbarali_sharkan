@@ -598,7 +598,7 @@ form button {
     }
 
     .venue-section {
-        top: 0px;
+        top: 200px;
     }
 
     .venue-image img {
@@ -612,6 +612,9 @@ form button {
         top: -190px;
     }
 
+    .map {
+        top: 150px;
+    }
    
 
     .text {
@@ -622,6 +625,10 @@ form button {
     .time-box {
         margin: 5px 0;
     }
+
+    .countdown-container {
+        top: 120px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -630,7 +637,7 @@ form button {
     }
 
       .text_i_and_j .heart {
-         margin: 50px 0;
+         margin: 100px 0;
     }
 
 
@@ -711,6 +718,7 @@ form button {
     }
 
     .venue-section {
+        position: relative;
         top: 200px;
     }
 
